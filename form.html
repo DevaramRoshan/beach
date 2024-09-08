@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      form {
+        border: 1px solid black;
+        border-radius: 10px;
+        height: 80vh;
+        width: 50vw;
+      }
+      label {
+        font-size: 1.5rem;
+        margin: 1em 0 0 1em;
+        display: inline-block;
+      }
+      input {
+        height: 10%;
+        width: 80%;
+        margin: 0 0 1em 1.5em;
+        border-radius: 10px;
+        border: 0.5px solid black;
+      }
+      .submit{
+        height: 10%;
+        width: 15%;
+        background-color: green;
+        font-weight: bold;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Submission Form</h1>
+    <form>
+      <label for="name">Name:</label>
+      <br />
+      <input
+        type="text"
+        id="name"
+        minlength="3"
+        title="name should have more than 3 characters"
+        required
+      />
+      <label for="mail">Email:</label>
+      <br />
+      <input
+        type="email"
+        id="mail"
+        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+        title="invaild email address"
+        required
+      />
+      <label for="Password">Password:</label>
+      <br />
+      <input
+        type="password"
+        id="password"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        minlength="8"
+        title="password must be 8 or more  characters long and contain at least one lowercase, one uppercase,one number"
+        required
+      />
+      <br>
+      <input type="submit" class="submit">
+    </form>
+  </body>
+</html>

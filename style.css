@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+
+.video{
+    height: 110vh;
+    width: 93%;
+    z-index: -1;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0.5%;
+}
+.video video{
+    height: 100%;
+    width: fit-content;
+}
+.header{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: purple; */
+    /* position: relative; */
+    z-index: 2;
+}
+
+.header h1{
+    padding-left: 3rem;
+}
+.search{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    height: 40%;
+    width: 25%;
+    border-radius: 15px;
+}
+.search input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+}
+.links{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.links a {
+    font-size: 1.1rem;
+}
+.main{
+    height: 101vh;
+    width: 100vw;
+    background-image: url(./images/main.avif);
+    background-size: cover;
+}
+.multi{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.tasks{
+    height: 90%;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.tasks a {
+    font-size: 1.4rem;
+    display: inline-block;
+    margin: 0.3em;
+    font-weight: 600;
+    color: indigo;
+}
+.output{
+    height: 90%;
+    width: 70%;
+    border: 2px solid rgba(0, 0, 0, 0.529);
+}
+.output iframe{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+footer{
+    height: 25vh;
+    width: 100vw;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.681);
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.foot{
+    height: 80%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
